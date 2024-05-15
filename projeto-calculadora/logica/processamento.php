@@ -1,7 +1,8 @@
 <?php
 require_once "funcoesCalculo.php";
 
-$result;
+$result = "";
+session_start();
 
 if(isset($_POST['inputNum1']) && isset($_POST['inputNum2'])){
     $num1 = $_POST['inputNum1'];
@@ -24,4 +25,6 @@ if(isset($_POST['inputNum1']) && isset($_POST['inputNum2'])){
 
 }
 
-Echo $result;
+$_SESSION["resultado"] = $result;
+header('location:../index.php');
+die();

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -32,6 +36,13 @@
             </select>
             <input id="botao" type="submit" value="Calcular">
         </form>
+        <h1 id="resultado">
+            <?php
+                if(isset($_SESSION['resultado'])) {
+                    echo $_SESSION['resultado'];
+                }
+            ?>
+        </h1>
         <img src="img/google-play.png">
     </div>
 
