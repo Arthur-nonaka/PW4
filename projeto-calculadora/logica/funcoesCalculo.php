@@ -23,3 +23,9 @@ function cmToMeters($comprimento) {
 function metersToCm($comprimento) {
     return ($comprimento * 100);
 }
+function metersToKm($comprimento) {
+    return ($comprimento / 1000);
+}
+function KmToMeters($comprimento) {
+    return ($comprimento * 1000);
+}

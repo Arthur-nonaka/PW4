@@ -29,6 +29,8 @@
             <select name="selection">
                 <option value="cm">Centimetros para Metros</option>
                 <option value="meters">Metros para Centimetros</option>
+                <option value="metersToKm">Metros para Km</option>
+                <option value="km">Km para Metros</option>
             </select>
             <input id="botao" type="submit" value="Calcular">
         </form>

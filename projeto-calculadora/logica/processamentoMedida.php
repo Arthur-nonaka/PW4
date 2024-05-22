@@ -13,6 +13,12 @@ if(isset($_GET['medida'])){
         case "meters":
             $result = $medida ." -> " . metersToCm($medida);
             break;
+        case "metersToKm":
+            $result = $medida ." -> " . metersToKm($medida);
+            break;
+        case "km":
+            $result = $medida ." -> " . KmToMeters($medida);
+            break;
 
     }
 
