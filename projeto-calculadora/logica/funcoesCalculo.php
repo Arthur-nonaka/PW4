@@ -17,3 +17,9 @@ function ConvertToFahrenheit($temp) {
 function ConvertToCelcius($temp) {
     return (($temp - 32) / 1.8);
 }
+function cmToMeters($comprimento) {
+    return ($comprimento/100);
+}
+function metersToCm($comprimento) {
+    return ($comprimento * 100);
+}

@@ -23,16 +23,12 @@
     </nav>
     
     <div class="div-conteudo">
-        <form method="POST" action="./logica/processamento.php">
-            <label>Primeiro número:</label>
-            <input type="text" name="inputNum1" placeholder="Digite o número 1">
-            <label>Segundo número:</label>
-            <input type="text" name="inputNum2" placeholder="Digite o número 2">
-            <select name="selectOperacoes">
-                <option value="adicao">Adição</option>
-                <option value="subtracao">Subtração</option>
-                <option value="multiplicacao">Multiplicação</option>
-                <option value="divisao">Divisão</option>
+        <form method="GET" action="./logica/processamentoMedida.php">
+            <label>Medida:</label>
+            <input type="text" name="medida" placeholder="Digite a Medida">
+            <select name="selection">
+                <option value="cm">Centimetros para Metros</option>
+                <option value="meters">Metros para Centimetros</option>
             </select>
             <input id="botao" type="submit" value="Calcular">
         </form>
